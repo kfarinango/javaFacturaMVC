@@ -20,31 +20,16 @@ public class Factura {
     @Id
     @GeneratedValue
     private Integer idFactura;
-    private String nombreProducto;
     private Integer cantidad;
-    private Double subTotal;
-    private Double impuestos;
-    private Double total;
-    private String vendedor;
+    private Integer IdProducto;
 
     public Factura() {
     }
 
-    public Factura(Integer idFactura, String nombreProducto, Integer cantidad, Double subTotal, Double impuestos, Double total) {
+    public Factura(Integer idFactura, Integer cantidad, Integer IdProducto) {
         this.idFactura = idFactura;
-        this.nombreProducto = nombreProducto;
         this.cantidad = cantidad;
-        this.subTotal = subTotal;
-        this.impuestos = impuestos;
-        this.total = total;
-    }
-
-    public Double getTotal() {
-        return total;
-    }
-
-    public void setTotal(Double total) {
-        this.total = total;
+        this.IdProducto = IdProducto;
     }
 
     public Integer getIdFactura() {
@@ -55,14 +40,6 @@ public class Factura {
         this.idFactura = idFactura;
     }
 
-    public String getNombreProducto() {
-        return nombreProducto;
-    }
-
-    public void setNombreProducto(String nombreProducto) {
-        this.nombreProducto = nombreProducto;
-    }
-
     public Integer getCantidad() {
         return cantidad;
     }
@@ -71,25 +48,18 @@ public class Factura {
         this.cantidad = cantidad;
     }
 
-    public Double getSubTotal() {
-        return subTotal;
+    public Integer getIdProducto() {
+        return IdProducto;
     }
 
-    public void setSubTotal(Double subTotal) {
-        this.subTotal = subTotal;
-    }
-
-    public Double getImpuestos() {
-        return impuestos;
-    }
-
-    public void setImpuestos(Double impuestos) {
-        this.impuestos = impuestos;
+    public void setIdProducto(Integer IdProducto) {
+        this.IdProducto = IdProducto;
     }
 
     @Override
     public String toString() {
-        return "Factura{" + "idFactura=" + idFactura + ", nombreProducto=" + nombreProducto + ", cantidad=" + cantidad + ", subTotal=" + subTotal + ", impuestos=" + impuestos + ", total=" + total + '}';
+        return "Factura{" + "idFactura=" + idFactura + ", cantidad=" + cantidad + ", IdProducto=" + IdProducto + '}';
     }
+
     
 }

@@ -29,7 +29,7 @@ public class ClienteDAO extends Cliente{
        try{
         EntityManager em = getEntityManger();
         if(em.isOpen()){
-            System.out.println("conexion Exitosa");
+            System.out.println("Cambio exitoso");
             
         }else{
             System.err.println("Error revise la conexcion a la base de datos"); 
@@ -44,6 +44,4 @@ public class ClienteDAO extends Cliente{
             ex.printStackTrace();
         }
     }
-
-   
 }

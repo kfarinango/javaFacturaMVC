@@ -23,6 +23,7 @@ public class Empleado {
     private String ci;
     private String nombre;
     private String apellido;
+    private String telefono;
     private String direccion;
     private String cargo;
     private Double salario;
@@ -30,21 +31,14 @@ public class Empleado {
     public Empleado() {
     }
 
-    public Empleado(Integer idEmpleado, String ci, String nombre, String apellido, String direccion, String cargo, Double salario) {
+    public Empleado(Integer idEmpleado, String ci, String nombre, String apellido, String numero, String direccion, String cargo, Double salario) {
         this.idEmpleado = idEmpleado;
         this.ci = ci;
         this.nombre = nombre;
         this.apellido = apellido;
+        this.telefono = numero;
         this.direccion = direccion;
         this.cargo = cargo;
-        this.salario = salario;
-    }
-
-    public Double getSalario() {
-        return salario;
-    }
-
-    public void setSalario(Double salario) {
         this.salario = salario;
     }
 
@@ -80,6 +74,14 @@ public class Empleado {
         this.apellido = apellido;
     }
 
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
     public String getDireccion() {
         return direccion;
     }
@@ -96,10 +98,18 @@ public class Empleado {
         this.cargo = cargo;
     }
 
+    public Double getSalario() {
+        return salario;
+    }
+
+    public void setSalario(Double salario) {
+        this.salario = salario;
+    }
+
     @Override
     public String toString() {
-        return "Empleado{" + "idEmpleado=" + idEmpleado + ", ci=" + ci + ", nombre=" + nombre + ", apellido=" + apellido + ", direccion=" + direccion + ", cargo=" + cargo + ", salario=" + salario + '}';
+        return "Empleado{" + "idEmpleado=" + idEmpleado + ", ci=" + ci + ", nombre=" + nombre + ", apellido=" + apellido + ", numero=" + telefono + ", direccion=" + direccion + ", cargo=" + cargo + ", salario=" + salario + '}';
     }
-    
+
     
 }

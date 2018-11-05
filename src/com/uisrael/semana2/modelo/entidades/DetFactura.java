@@ -5,6 +5,7 @@
  */
 package com.uisrael.semana2.modelo.entidades;
 
+import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -21,31 +22,19 @@ public class DetFactura {
     @GeneratedValue
     private Integer idDetFactura;
     private String fecha;
-    private String nombCliente;
-    private String ci_Ruc;
-    private String dirCliente;
-    private String telfCliente;
+    private Integer idCliente;
+    private String rucEmpresa;
 
     public DetFactura() {
     }
 
-    public DetFactura(Integer idDetFactura, String fecha, String nombCliente, String ci_Ruc, String dirCliente, String telfCliente) {
+    public DetFactura(Integer idDetFactura, String fecha, Integer idCliente, String rucEmpresa) {
         this.idDetFactura = idDetFactura;
         this.fecha = fecha;
-        this.nombCliente = nombCliente;
-        this.ci_Ruc = ci_Ruc;
-        this.dirCliente = dirCliente;
-        this.telfCliente = telfCliente;
+        this.idCliente = idCliente;
+        this.rucEmpresa = rucEmpresa;
     }
-
-    public String getTelfCliente() {
-        return telfCliente;
-    }
-
-    public void setTelfCliente(String telfCliente) {
-        this.telfCliente = telfCliente;
-    }
-
+    
     public Integer getIdDetFactura() {
         return idDetFactura;
     }
@@ -62,34 +51,25 @@ public class DetFactura {
         this.fecha = fecha;
     }
 
-    public String getNombCliente() {
-        return nombCliente;
+    public Integer getIdCliente() {
+        return idCliente;
     }
 
-    public void setNombCliente(String nombCliente) {
-        this.nombCliente = nombCliente;
+    public void setIdCliente(Integer idCliente) {
+        this.idCliente = idCliente;
     }
 
-    public String getCi_Ruc() {
-        return ci_Ruc;
+    public String getRucEmpresa() {
+        return rucEmpresa;
     }
 
-    public void setCi_Ruc(String ci_Ruc) {
-        this.ci_Ruc = ci_Ruc;
-    }
-
-    public String getDirCliente() {
-        return dirCliente;
-    }
-
-    public void setDirCliente(String dirCliente) {
-        this.dirCliente = dirCliente;
+    public void setRucEmpresa(String rucEmpresa) {
+        this.rucEmpresa = rucEmpresa;
     }
 
     @Override
     public String toString() {
-        return "DetFactura{" + "idDetFactura=" + idDetFactura + ", fecha=" + fecha + ", nombCliente=" + nombCliente + ", ci_Ruc=" + ci_Ruc + ", dirCliente=" + dirCliente + ", telfCliente=" + telfCliente + '}';
-    }
-    
+        return "DetFactura{" + "idDetFactura=" + idDetFactura + ", fecha=" + fecha + ", idCliente=" + idCliente + ", rucEmpresa=" + rucEmpresa + '}';
+    } 
     
 }

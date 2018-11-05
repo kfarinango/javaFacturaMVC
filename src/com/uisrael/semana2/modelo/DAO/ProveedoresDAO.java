@@ -5,10 +5,40 @@
  */
 package com.uisrael.semana2.modelo.DAO;
 
+import com.uisrael.semana2.modelo.entidades.Proveedores;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+
 /**
  *
  * @author Asus
  */
 public class ProveedoresDAO {
-    
+    private static EntityManager getEntityManger() {
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("semana2PU");
+        EntityManager em = emf.createEntityManager();
+        return em;
+    }
+    public void insertarProveedores(Proveedores proveedor){
+           
+       try{
+        EntityManager em = getEntityManger();
+        if(em.isOpen()){
+            System.out.println("Cambio exitoso");
+            
+        }else{
+            System.err.println("Error revise la conexcion a la base de datos"); 
+        }
+                  
+        EntityTransaction etx = em.getTransaction();
+        etx.begin();
+        em.persist(proveedor);
+        etx.commit();
+        
+        } catch(Exception ex){
+            ex.printStackTrace();
+        }
+    }
 }

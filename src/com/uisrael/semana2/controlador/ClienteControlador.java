@@ -13,7 +13,7 @@ import com.uisrael.semana2.modelo.entidades.Cliente;
  * @author master
  */
 public class ClienteControlador {
-    int id;
+    
     public void insertarCliente(Integer Id, String Cedula, String Nombre, String Apellido, String Direccion, String Telefono){
         try{
             ClienteDAO sql = new ClienteDAO();

@@ -3,14 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/asus/NetBeansProjects/javaFacturaMVC/semana2/src/com/uisrael/semana2/modelo/entidades/DetFactura.java</file>
-            <file>file:/home/asus/NetBeansProjects/javaFacturaMVC/semana2/src/com/uisrael/semana2/modelo/entidades/Factura.java</file>
-            <file>file:/home/asus/NetBeansProjects/javaFacturaMVC/semana2/src/com/uisrael/semana2/modelo/entidades/ProductoProveedor.java</file>
-            <file>file:/home/asus/NetBeansProjects/javaFacturaMVC/semana2/src/com/uisrael/semana2/modelo/entidades/Cliente_1.java</file>
-            <file>file:/home/asus/NetBeansProjects/javaFacturaMVC/semana2/src/com/uisrael/semana2/modelo/entidades/Empleado.java</file>
-            <file>file:/home/asus/NetBeansProjects/javaFacturaMVC/semana2/src/com/uisrael/semana2/modelo/entidades/Productos.java</file>
-            <file>file:/home/asus/NetBeansProjects/javaFacturaMVC/semana2/src/com/uisrael/semana2/modelo/entidades/Cliente.java</file>
-            <file>file:/home/asus/NetBeansProjects/javaFacturaMVC/semana2/src/com/uisrael/semana2/modelo/entidades/Proveedores.java</file>
+            <file>file:/C:/Users/Asus/Documents/8%20vo/programacion%20avanzada/proyectoClase/semana2/src/semana2/Semana2.java</file>
+            <file>file:/C:/Users/Asus/Documents/8%20vo/programacion%20avanzada/proyectoClase/semana2/src/com/uisrael/semana2/modelo/DAO/ProveedoresDAO.java</file>
+            <file>file:/C:/Users/Asus/Documents/8%20vo/programacion%20avanzada/proyectoClase/semana2/src/com/uisrael/semana2/modelo/DAO/ProductoProveedorDAO.java</file>
+            <file>file:/C:/Users/Asus/Documents/8%20vo/programacion%20avanzada/proyectoClase/semana2/src/com/uisrael/semana2/modelo/DAO/EmpleadoDAO.java</file>
+            <file>file:/C:/Users/Asus/Documents/8%20vo/programacion%20avanzada/proyectoClase/semana2/src/com/uisrael/semana2/modelo/DAO/ClienteDAO.java</file>
+            <file>file:/C:/Users/Asus/Documents/8%20vo/programacion%20avanzada/proyectoClase/semana2/src/com/uisrael/semana2/modelo/DAO/DetFacturaDAO.java</file>
+            <file>file:/C:/Users/Asus/Documents/8%20vo/programacion%20avanzada/proyectoClase/semana2/src/com/uisrael/semana2/modelo/DAO/ProductosDAO.java</file>
+            <file>file:/C:/Users/Asus/Documents/8%20vo/programacion%20avanzada/proyectoClase/semana2/src/com/uisrael/semana2/modelo/DAO/FacturaDAO.java</file>
         </group>
     </open-files>
 </project-private>
